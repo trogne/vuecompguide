@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "if test \"$NODE_ENV\" = \"production\" ; then vue-cli-service build; fi",
     "lint": "vue-cli-service lint",
     "start": "node server.js"    
   },
